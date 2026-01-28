@@ -1,0 +1,1 @@
+This directory contains the foundational configuration for the entire cluster setup. Each subfolder represents a distinct component and serves as a core building block used across all environments and clusters.
