@@ -1,0 +1,12 @@
+# https://docs.okd.io/4.18/authentication/identity_providers/configuring-google-identity-provider.html
+- op: add
+  path: /spec/identityProviders/-
+  value:
+    google:
+      clientID: # Client ID
+      clientSecret: # Configure secret cluster specific as sealed secret
+        name: google-secret
+      hostedDomain: acme.com #A hosted domain used to restrict sign-in accounts.
+    mappingMethod: claim
+    name: RedHatSSO
+    type: Google
